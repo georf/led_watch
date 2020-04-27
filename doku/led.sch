@@ -1,0 +1,122 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Q_NPN_CBE Q?
+U 1 1 5EA60ABF
+P 4350 3050
+F 0 "Q?" H 4541 3096 50  0001 L CNN
+F 1 "BC337" H 4541 3050 50  0000 L CNN
+F 2 "" H 4550 3150 50  0001 C CNN
+F 3 "~" H 4350 3050 50  0001 C CNN
+	1    4350 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EA60F9D
+P 4000 3050
+F 0 "R?" V 3793 3050 50  0001 C CNN
+F 1 "R" V 3884 3050 50  0001 C CNN
+F 2 "" V 3930 3050 50  0001 C CNN
+F 3 "~" H 4000 3050 50  0001 C CNN
+	1    4000 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5EA61CAC
+P 5250 3150
+F 0 "D?" H 5243 2895 50  0001 C CNN
+F 1 "LED" H 5243 2986 50  0000 C CNN
+F 2 "" H 5250 3150 50  0001 C CNN
+F 3 "~" H 5250 3150 50  0001 C CNN
+	1    5250 3150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5EA62981
+P 5250 3450
+F 0 "D?" H 5243 3195 50  0001 C CNN
+F 1 "LED" H 5243 3286 50  0000 C CNN
+F 2 "" H 5250 3450 50  0001 C CNN
+F 3 "~" H 5250 3450 50  0001 C CNN
+	1    5250 3450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EA62E6C
+P 4950 3150
+F 0 "R?" V 4743 3150 50  0001 C CNN
+F 1 "R" V 4835 3150 50  0001 C CNN
+F 2 "" V 4880 3150 50  0001 C CNN
+F 3 "~" H 4950 3150 50  0001 C CNN
+	1    4950 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EA6347E
+P 4950 3450
+F 0 "R?" V 4743 3450 50  0001 C CNN
+F 1 "R" V 4835 3450 50  0001 C CNN
+F 2 "" V 4880 3450 50  0001 C CNN
+F 3 "~" H 4950 3450 50  0001 C CNN
+	1    4950 3450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4800 3450 4800 3300
+Wire Wire Line
+	4800 3300 4450 3300
+Wire Wire Line
+	4450 3300 4450 3250
+Connection ~ 4800 3300
+Wire Wire Line
+	4800 3300 4800 3150
+Wire Wire Line
+	5400 3150 5500 3150
+Wire Wire Line
+	5500 3150 5500 3450
+Wire Wire Line
+	5500 3450 5400 3450
+$Comp
+L power:GND #PWR?
+U 1 1 5EA65DE4
+P 5500 3450
+F 0 "#PWR?" H 5500 3200 50  0001 C CNN
+F 1 "GND" H 5505 3277 50  0000 C CNN
+F 2 "" H 5500 3450 50  0001 C CNN
+F 3 "" H 5500 3450 50  0001 C CNN
+	1    5500 3450
+	1    0    0    -1  
+$EndComp
+Connection ~ 5500 3450
+Text GLabel 3850 3050 0    50   Input ~ 0
+ShiftOutput
+$Comp
+L power:+5V #PWR?
+U 1 1 5EA666DD
+P 4450 2850
+F 0 "#PWR?" H 4450 2700 50  0001 C CNN
+F 1 "+5V" H 4465 3023 50  0000 C CNN
+F 2 "" H 4450 2850 50  0001 C CNN
+F 3 "" H 4450 2850 50  0001 C CNN
+	1    4450 2850
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
